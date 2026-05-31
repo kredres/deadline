@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Продление сроков строительства дома в Сбербанке</title>
+<meta name="description" content="Юридическая помощь заемщикам по ипотеке ИЖС: продление сроков строительства, подготовка документов, сопровождение обращения в банк и помощь с вопросом неустойки.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #FFFFFF;
+    --bg2: #F4F8F5;
+    --bg3: #EAF3EC;
+    --green: #21A038;
+    --green-dark: #107F2E;
+    --green-light: #E8F5EC;
+    --text: #1F1F1F;
+    --text2: #6B7280;
+    --border: #E5E7EB;
+    --tg: #229ED9;
+    --tg-dark: #1989B8;
+    --shadow: 0 2px 16px rgba(33,160,56,0.07), 0 1px 4px rgba(0,0,0,0.04);
+    --shadow-hover: 0 8px 32px rgba(33,160,56,0.13), 0 2px 8px rgba(0,0,0,0.06);
+    --r: 22px;
+    --r-sm: 14px;
+    --font: 'Manrope', Arial, sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+  }
+  .nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+  }
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 17px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .nav-logo-icon {
+    width: 34px; height: 34px;
+    background: var(--green);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .nav-logo-icon svg { width: 18px; height: 18px; fill: #fff; }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-links a {
+    color: var(--text2);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: var(--r-sm);
+    transition: color .2s, background .2s;
+  }
+  .nav-links a:hover { color: var(--green); background: var(--green-light); }
+  .nav-cta {
+    background: var(--green);
+    color: #fff !important;
+    padding: 8px 18px !important;
+    border-radius: var(--r-sm) !important;
+    font-weight: 600 !important;
+  }
+  .nav-cta:hover { background: var(--green-dark) !important; color: #fff !important; }
+  .burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 8px;
+  }
+  .burger span {
+    display: block;
+    width: 22px; height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: .3s;
+    margin: 5px 0;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 12px 20px 20px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    gap: 4px;
+  }
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: var(--r-sm);
+    transition: background .2s;
+  }
+  .mobile-menu a:hover { background: var(--bg2); }
+  .mobile-menu.open { display: flex; }
+
+  /* SECTIONS */
+  section { padding: 72px 20px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* HERO */
+  #hero {
+    background: var(--bg);
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 40px;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--green-light);
+    color: var(--green-dark);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    letter-spacing: .01em;
+  }
+  .hero-badge::before {
+    content: '';
+    width: 7px; height: 7px;
+    background: var(--green);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text);
+    margin-bottom: 16px;
+    letter-spacing: -.02em;
+  }
+  .hero-sub {
+    font-size: 17px;
+    color: var(--text2);
+    margin-bottom: 32px;
+    max-width: 480px;
+    line-height: 1.65;
+  }
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: var(--r-sm);
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all .2s;
+    line-height: 1;
+  }
+  .btn-primary {
+    background: var(--green);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(33,160,56,0.25);
+  }
+  .btn-primary:hover { background: var(--green-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(33,160,56,0.3); }
+  .btn-tg {
+    background: var(--tg);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(34,158,217,0.25);
+  }
+  .btn-tg:hover { background: var(--tg-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(34,158,217,0.3); }
+  .btn-outline {
+    background: var(--bg);
+    color: var(--green-dark);
+    border: 1.5px solid var(--green);
+  }
+  .btn-outline:hover { background: var(--green-light); transform: translateY(-1px); }
+
+  .tg-icon {
+    width: 18px; height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* HERO CARD */
+  .hero-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .stat-item {}
+  .stat-num {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--green);
+    letter-spacing: -.02em;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .stat-divider {
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* SECTION HEADERS */
+  .section-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 800;
+    letter-spacing: -.02em;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+  .section-desc {
+    font-size: 16px;
+    color: var(--text2);
+    margin-bottom: 40px;
+    max-width: 560px;
+    line-height: 1.65;
+  }
+
+  /* PROBLEM CARDS */
+  #problem { background: var(--bg2); }
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }
+  .problem-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 28px 26px;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .problem-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+  .problem-icon {
+    width: 56px; height: 56px;
+    background: #FEF2F2;
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px;
+  }
+  .problem-icon svg { width: 30px; height: 30px; }
+  .problem-card p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  /* SOLUTION */
+  #solution { background: var(--bg); }
+  .solution-wrap {
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    border-radius: var(--r);
+    padding: 48px 44px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .solution-wrap h2 { color: #fff; margin-bottom: 12px; }
+  .solution-wrap p { color: rgba(255,255,255,0.85); font-size: 16px; line-height: 1.65; }
+  .solution-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .solution-badge {
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: var(--r-sm);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .solution-badge svg {
+    width: 22px; height: 22px;
+    flex-shrink: 0;
+    fill: #fff;
+  }
+  .solution-tg-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    color: var(--tg);
+    padding: 14px 24px;
+    border-radius: var(--r-sm);
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 24px;
+    transition: transform .2s;
+  }
+  .solution-tg-btn:hover { transform: translateY(-1px); }
+  .solution-tg-btn svg { width: 20px; height: 20px; }
+
+  /* STEPS */
+  #steps { background: var(--bg2); }
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 20px;
+    padding: 0 0 36px;
+    position: relative;
+  }
+  .step:last-child { padding-bottom: 0; }
+  .step-num-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .step-num {
+    width: 44px; height: 44px;
+    background: var(--green);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .step-line {
+    width: 2px;
+    flex: 1;
+    background: var(--border);
+    margin-top: 8px;
+  }
+  .step:last-child .step-line { display: none; }
+  .step-body {
+    padding-top: 10px;
+  }
+  .step-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .step-desc {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+
+  /* DOCS */
+  #docs { background: var(--bg); }
+  .docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  .doc-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 28px 22px;
+    text-align: center;
+    transition: all .2s;
+  }
+  .doc-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+  .doc-icon-wrap {
+    width: 56px; height: 56px;
+    background: var(--green-light);
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 14px;
+  }
+  .doc-icon-wrap svg { width: 28px; height: 28px; fill: var(--green-dark); }
+  .doc-card p { font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.4; }
+
+  /* CALCULATOR */
+  #calc { background: var(--bg2); }
+  .calc-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .calc-form {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 32px 28px;
+  }
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text2);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+  }
+  .form-input {
+    width: 100%;
+    background: var(--bg2);
+    border: 1.5px solid var(--border);
+    border-radius: var(--r-sm);
+    padding: 13px 16px;
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    transition: border-color .2s;
+    outline: none;
+  }
+  .form-input:focus { border-color: var(--green); background: var(--bg); }
+  .calc-result {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .result-item {}
+  .result-label { font-size: 13px; color: var(--text2); font-weight: 500; margin-bottom: 4px; }
+  .result-value { font-size: 26px; font-weight: 800; color: var(--text); letter-spacing: -.02em; }
+  .result-value.accent { color: var(--green); }
+  .result-divider { height: 1px; background: var(--border); }
+  .calc-note {
+    margin-top: 16px;
+    font-size: 12px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+
+  /* PRICE */
+  #price { background: var(--bg); }
+  .price-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 44px 40px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: center;
+  }
+  .price-card h3 { font-size: 22px; font-weight: 800; margin-bottom: 14px; color: var(--text); }
+  .price-card p { font-size: 15px; color: var(--text2); line-height: 1.65; max-width: 520px; }
+
+  /* TRUST */
+  #trust { background: var(--bg2); }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+  }
+  .trust-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 28px 24px;
+    transition: box-shadow .2s;
+  }
+  .trust-card:hover { box-shadow: var(--shadow-hover); }
+  .trust-num {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--green);
+    letter-spacing: -.03em;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .trust-icon {
+    width: 44px; height: 44px;
+    background: var(--green-light);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 12px;
+  }
+  .trust-icon svg { width: 24px; height: 24px; fill: var(--green-dark); }
+  .trust-card p { font-size: 14px; color: var(--text2); line-height: 1.5; font-weight: 500; }
+
+  /* RESULTS */
+  #results { background: var(--bg); }
+  .results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+  .result-doc {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    overflow: hidden;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .result-doc:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+  .doc-preview {
+    aspect-ratio: 1 / 1.3;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+  .doc-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .doc-info {
+    padding: 20px 22px;
+  }
+  .doc-info p { font-size: 14px; font-weight: 600; color: var(--text); line-height: 1.5; }
+  .results-disclaimer {
+    font-size: 12px;
+    color: var(--text2);
+    text-align: center;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* CHECKLIST */
+  #checklist { background: var(--bg2); }
+  .checklist-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 48px 44px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .checklist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .check-icon {
+    width: 22px; height: 22px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .check-icon svg { width: 12px; height: 12px; fill: #fff; }
+  .checklist-visual {
+    background: var(--bg2);
+    border-radius: var(--r);
+    padding: 32px;
+    text-align: center;
+  }
+  .checklist-visual-icon {
+    width: 80px; height: 80px;
+    background: var(--green);
+    border-radius: 22px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+  }
+  .checklist-visual-icon svg { width: 40px; height: 40px; fill: #fff; }
+  .checklist-visual h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+  .checklist-visual p { font-size: 13px; color: var(--text2); margin-bottom: 20px; }
+
+  /* CTA SECTION (replaces form) */
+  #cta-section { background: var(--bg); }
+  .cta-wrap {
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    border-radius: var(--r);
+    padding: 56px 48px;
+    text-align: center;
+    color: #fff;
+  }
+  .cta-wrap h2 { color: #fff; margin-bottom: 14px; }
+  .cta-wrap p {
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+    max-width: 540px;
+    margin: 0 auto 32px;
+    line-height: 1.65;
+  }
+  .cta-tg-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    color: var(--tg);
+    padding: 18px 36px;
+    border-radius: var(--r-sm);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+  .cta-tg-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,0.2); }
+  .cta-tg-btn svg { width: 24px; height: 24px; }
+  .cta-username {
+    margin-top: 18px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+  }
+
+  /* CONTACTS */
+  #contacts { background: var(--bg2); }
+  .contacts-single {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .contact-tg-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 36px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: all .2s;
+  }
+  .contact-tg-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+  .contact-tg-icon {
+    width: 64px; height: 64px;
+    background: var(--tg);
+    border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 18px;
+  }
+  .contact-tg-icon svg { width: 32px; height: 32px; fill: #fff; }
+  .contact-tg-label { font-size: 13px; color: var(--text2); text-transform: uppercase; letter-spacing: .06em; font-weight: 600; margin-bottom: 6px; }
+  .contact-tg-val { font-size: 22px; font-weight: 800; color: var(--text); margin-bottom: 12px; }
+  .contact-tg-cta { font-size: 14px; color: var(--tg); font-weight: 600; }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 24px 20px;
+    text-align: center;
+  }
+  .disclaimer p {
+    font-size: 12px;
+    color: var(--text2);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--text);
+    padding: 32px 20px;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate { animation: fadeUp .5s ease both; }
+  .delay-1 { animation-delay: .1s; }
+  .delay-2 { animation-delay: .2s; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-card { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; }
+    .stat-divider { display: none; }
+    .solution-wrap { grid-template-columns: 1fr; padding: 32px 24px; }
+    .calc-wrap { grid-template-columns: 1fr; }
+    .price-card { grid-template-columns: 1fr; gap: 24px; padding: 32px 28px; }
+    .results-grid { grid-template-columns: 1fr; }
+    .checklist-card { grid-template-columns: 1fr; padding: 32px 28px; }
+    .cta-wrap { padding: 40px 24px; }
+    .nav-links { display: none; }
+    .burger { display: flex; flex-direction: column; }
+  }
+  @media (max-width: 600px) {
+    section { padding: 52px 16px; }
+    .hero-card { grid-template-columns: 1fr; }
+    .stat-divider { display: block; }
+    .btn { padding: 13px 18px; font-size: 14px; }
+    .cta-tg-btn { padding: 16px 28px; font-size: 16px; }
+    .checklist-card { padding: 28px 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TELEGRAM ICON DEFINITION (reusable) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="tg-icon" viewBox="0 0 24 24">
+      <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 12L12 3l9 9v9H3v-9z"/></svg>
+      </div>
+      ИЖС Правовая помощь
+    </a>
+    <div class="nav-links">
+      <a href="#problem">О проблеме</a>
+      <a href="#steps">Как работаем</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#price">Стоимость</a>
+      <a href="https://t.me/credresurs" target="_blank" rel="noopener" class="nav-cta">Telegram</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#problem" onclick="closeMobileMenu()">О проблеме</a>
+    <a href="#steps" onclick="closeMobileMenu()">Как работаем</a>
+    <a href="#calc" onclick="closeMobileMenu()">Калькулятор</a>
+    <a href="#price" onclick="closeMobileMenu()">Стоимость</a>
+    <a href="https://t.me/credresurs" target="_blank" rel="noopener" onclick="closeMobileMenu()">Telegram</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="animate">
+        <div class="hero-badge">Юридическое сопровождение заёмщиков ИЖС</div>
+        <h1>Продление сроков строительства дома в Сбербанке</h1>
+        <p class="hero-sub">Помогаем заёмщикам по ипотеке ИЖС продлить срок строительства без начисления неустойки.</p>
+        <div class="btn-group">
+          <a href="https://t.me/credresurs" target="_blank" rel="noopener" class="btn btn-tg">
+            <svg class="tg-icon"><use href="#tg-icon"/></svg>
+            Получить бесплатную консультацию
+          </a>
+          <a href="assets/checklist.pdf" target="_blank" rel="noopener" class="btn btn-outline" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v14m-6-6l6 6 6-6"/><path d="M4 20h16"/></svg>
+            Скачать чек-лист
+          </a>
+        </div>
+      </div>
+      <div class="hero-card animate delay-2">
+        <div class="stat-item">
+          <div class="stat-num">до 5</div>
+          <div class="stat-label">рабочих дней — получение согласования банка</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">30 мин</div>
+          <div class="stat-label">первичный анализ документов и оценка ситуации</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-num">50+</div>
+          <div class="stat-label">продлений сроков строительства за 2026 год</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem">
+  <div class="container">
+    <div class="section-label">Что происходит при нарушении сроков</div>
+    <h2>Что происходит, если срок строительства нарушен</h2>
+    <p class="section-desc">Нарушение сроков строительства по ипотечному договору может повлечь серьёзные финансовые и правовые последствия.</p>
+    <div class="problem-grid">
+      <!-- Money in chains: bank can demand early repayment -->
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Coin -->
+            <circle cx="16" cy="16" r="9" fill="#FEE2E2" stroke="#DC2626" stroke-width="2"/>
+            <text x="16" y="20.5" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="800" fill="#DC2626">₽</text>
+            <!-- Chain links -->
+            <ellipse cx="6" cy="8" rx="2.5" ry="2" fill="none" stroke="#6B7280" stroke-width="1.8"/>
+            <ellipse cx="9.5" cy="11" rx="2.5" ry="2" fill="none" stroke="#6B7280" stroke-width="1.8" transform="rotate(45 9.5 11)"/>
+            <ellipse cx="26" cy="24" rx="2.5" ry="2" fill="none" stroke="#6B7280" stroke-width="1.8" transform="rotate(45 26 24)"/>
+            <ellipse cx="23" cy="27" rx="2.5" ry="2" fill="none" stroke="#6B7280" stroke-width="1.8"/>
+          </svg>
+        </div>
+        <p>Банк может потребовать досрочно вернуть кредит</p>
+      </div>
+
+      <!-- Money flowing away: penalty -->
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Falling coins -->
+            <circle cx="9" cy="8" r="3.5" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8"/>
+            <text x="9" y="10.5" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="5" font-weight="800" fill="#DC2626">₽</text>
+            <circle cx="16" cy="14" r="3.5" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8"/>
+            <text x="16" y="16.5" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="5" font-weight="800" fill="#DC2626">₽</text>
+            <circle cx="23" cy="22" r="3.5" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8"/>
+            <text x="23" y="24.5" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="5" font-weight="800" fill="#DC2626">₽</text>
+            <!-- Arrow down -->
+            <path d="M28 28 L29.5 26.5 M28 28 L26.5 26.5 M28 28 L28 23" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p>Будет начислена неустойка от 15 до 60 тысяч рублей в месяц</p>
+      </div>
+
+      <!-- Rejection / overdue credit history -->
+      <div class="problem-card">
+        <div class="problem-icon">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Document -->
+            <path d="M8 4 H21 L25 8 V27 a1 1 0 0 1 -1 1 H8 a1 1 0 0 1 -1 -1 V5 a1 1 0 0 1 1 -1 z" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M21 4 V8 H25" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-linejoin="round"/>
+            <!-- Declining bar chart inside -->
+            <rect x="11" y="18" width="2.2" height="5" fill="#DC2626"/>
+            <rect x="14.5" y="20" width="2.2" height="3" fill="#DC2626"/>
+            <rect x="18" y="22" width="2.2" height="1" fill="#DC2626"/>
+            <!-- Down arrow -->
+            <path d="M11 14 L20 14 M20 14 L17 11 M20 14 L17 17" stroke="#DC2626" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p>Возникает риск просрочки и ухудшения кредитной истории</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution">
+  <div class="container">
+    <div class="solution-wrap">
+      <div>
+        <h2>Мы помогаем продлить сроки до нарушения условий</h2>
+        <p>Проверяем документы, готовим правовую позицию, заявления и пакет документов для банка. При необходимости сопровождаем подписание дополнительного соглашения с подрядчиком и коммуникацию со Сбербанком.</p>
+        <a href="https://t.me/credresurs" target="_blank" rel="noopener" class="solution-tg-btn">
+          <svg><use href="#tg-icon"/></svg>
+          Написать в Telegram
+        </a>
+      </div>
+      <div class="solution-badges">
+        <div class="solution-badge">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6" fill="rgba(0,0,0,0.15)"/></svg>
+          Оцениваем возможность продления
+        </div>
+        <div class="solution-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          Помогаем подготовить документы
+        </div>
+        <div class="solution-badge">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="#fff" stroke-width="1.8"/></svg>
+          Берём коммуникацию с банком на себя
+        </div>
+        <div class="solution-badge">
+          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" fill="none" stroke="#fff" stroke-width="1.8"/><polyline points="22 4 12 14.01 9 11.01" fill="none" stroke="#fff" stroke-width="1.8"/></svg>
+          Сопровождаем получение согласования
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="steps">
+  <div class="container">
+    <div class="section-label">Как проходит работа</div>
+    <h2>Пять шагов к согласованию продления</h2>
+    <p class="section-desc">Понятный процесс от первого обращения до получения письма из банка.</p>
+    <div class="steps-list">
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">1</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Вы отправляете документы</div>
+          <div class="step-desc">Паспорт, кредитный договор, договор подряда и выписку ЕГРН на земельный участок — удобным способом через Telegram.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">2</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Анализируем ситуацию</div>
+          <div class="step-desc">В течение 30 минут оцениваем возможность продления сроков строительства и сообщаем о перспективах обращения в банк.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">3</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Готовим документы</div>
+          <div class="step-desc">В течение 1 дня готовим полный пакет: заявления и документы для дополнительного соглашения с подрядчиком.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">4</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Сопровождаем обращение в банк</div>
+          <div class="step-desc">Берём на себя коммуникацию с банком и вопросы, которые возникают в процессе рассмотрения заявки.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num-col">
+          <div class="step-num">5</div>
+          <div class="step-line"></div>
+        </div>
+        <div class="step-body">
+          <div class="step-title">Получаем согласование</div>
+          <div class="step-desc">Срок получения согласования — до 5 рабочих дней. Клиент получает согласие на заключение дополнительного соглашения и письмо о продлении сроков предоставления документов.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCS NEEDED -->
+<section id="docs">
+  <div class="container">
+    <div class="section-label">Документы</div>
+    <h2>Какие документы понадобятся</h2>
+    <p class="section-desc">Минимальный пакет для начала работы — большинство документов уже есть у вас на руках.</p>
+    <div class="docs-grid">
+      <div class="doc-card">
+        <div class="doc-icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-.99c0-2 4-3.08 6-3.08s6 1.08 6 3.08V18z"/></svg>
+        </div>
+        <p>Паспорт заёмщика</p>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+        </div>
+        <p>Кредитный договор</p>
+      </div>
+      <div class="doc-card">
+        <div class="doc-icon-wrap">
+          <svg viewBox="0 0 24 24"><path d="M9 2v2H4v16h16V4h-5V2H9zm2 2h2v2h-2V4zm-5 4h12v10H6V8zm2 2v2h8v-2H8zm0 4v2h5v-2H8z"/></svg>
+        </div>
+        <p>Договор подряда</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calc">
+  <div class="container">
+    <div class="section-label">Калькулятор</div>
+    <h2>Посчитайте возможное увеличение ежемесячной нагрузки</h2>
+    <p class="section-desc">Предварительная оценка — чтобы понять, стоит ли заблаговременно подготовить документы.</p>
+    <div class="calc-wrap">
+      <div class="calc-form">
+        <div class="form-group">
+          <label>Сумма кредита, ₽</label>
+          <input type="number" class="form-input" id="loanAmount" placeholder="6 000 000" oninput="calcUpdate()">
+        </div>
+        <div class="form-group">
+          <label>Текущий ежемесячный платёж, ₽</label>
+          <input type="number" class="form-input" id="monthlyPayment" placeholder="60 000" oninput="calcUpdate()">
+        </div>
+        <p class="calc-note">Расчёт является предварительным и не является банковским решением. Фактические условия зависят от кредитного договора и решения банка.</p>
+      </div>
+      <div class="calc-result">
+        <div class="result-item">
+          <div class="result-label">Возможное увеличение платежа</div>
+          <div class="result-value accent" id="res-increase">— ₽</div>
+        </div>
+        <div class="result-divider"></div>
+        <div class="result-item">
+          <div class="result-label">Новый ориентировочный платёж</div>
+          <div class="result-value" id="res-new">— ₽</div>
+        </div>
+        <div class="result-divider"></div>
+        <div class="result-item">
+          <div class="result-label">Возможная переплата за 3 месяца</div>
+          <div class="result-value" id="res-3mo">— ₽</div>
+        </div>
+        <a href="https://t.me/credresurs" target="_blank" rel="noopener" class="btn btn-tg" style="margin-top:8px;">
+          <svg class="tg-icon"><use href="#tg-icon"/></svg>
+          Получить консультацию
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section id="price">
+  <div class="container">
+    <div class="section-label">Стоимость</div>
+    <h2>Стоимость сопровождения</h2>
+    <div class="price-card">
+      <div>
+        <h3>Стоимость рассчитывается индивидуально</h3>
+        <p>В среднем стоимость услуг не превышает размер неустойки за 2–3 месяца. Это позволяет заранее снизить финансовые риски и в большинстве случаев экономически оправдано для заёмщика. Точная стоимость зависит от ситуации, суммы кредита и объёма необходимых документов.</p>
+      </div>
+      <div>
+        <a href="https://t.me/credresurs" target="_blank" rel="noopener" class="btn btn-tg">
+          <svg class="tg-icon"><use href="#tg-icon"/></svg>
+          Получить расчёт по моей ситуации
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+  <div class="container">
+    <div class="section-label">Наш опыт</div>
+    <h2>Почему нам доверяют</h2>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-num">2008</div>
+        <p>Работа с ведущими ипотечными банками — с 2008 года</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-num">50+</div>
+        <p>Продлений сроков строительства за 2026 год</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-num">30 мин</div>
+        <p>Первичный анализ сразу после получения документов</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <p>Подготовка документов и коммуникация с банком — под ключ</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results">
+  <div class="container">
+    <div class="section-label">Примеры результата</div>
+    <h2>Какие документы получают наши клиенты</h2>
+    <p class="section-desc">Итог сопровождения — конкретные документы из банка.</p>
+    <div class="results-grid">
+      <div class="result-doc">
+        <div class="doc-preview">
+          <img src="assets/document-1.png" alt="Письмо о согласии Сбербанка на продление сроков" loading="lazy">
+        </div>
+        <div class="doc-info">
+          <p>Согласие банка на заключение дополнительного соглашения к договору подряда</p>
+        </div>
+      </div>
+      <div class="result-doc">
+        <div class="doc-preview">
+          <img src="assets/document-2.png" alt="Письмо о продлении сроков с подписью и печатью" loading="lazy">
+        </div>
+        <div class="doc-info">
+          <p>Письмо о продлении сроков предоставления документов — с подписью и печатью банка</p>
+        </div>
+      </div>
+    </div>
+    <p class="results-disclaimer">Документы показаны в обезличенном виде. Итоговый результат зависит от условий кредитного договора и решения банка.</p>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section id="checklist">
+  <div class="container">
+    <div class="section-label">Лид-магнит</div>
+    <h2>Проверьте, подходит ли ваша ситуация под продление сроков</h2>
+    <p class="section-desc">Скачайте короткий чек-лист и проверьте, есть ли основания для обращения в банк.</p>
+    <div class="checklist-card">
+      <div>
+        <div class="checklist-items">
+          <div class="checklist-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="#fff" stroke-width="2.5" fill="none"/></svg></div>
+            У вас ипотека ИЖС в Сбербанке
+          </div>
+          <div class="checklist-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="#fff" stroke-width="2.5" fill="none"/></svg></div>
+            Срок строительства истекает в ближайшие месяцы
+          </div>
+          <div class="checklist-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="#fff" stroke-width="2.5" fill="none"/></svg></div>
+            Есть действующий договор подряда
+          </div>
+          <div class="checklist-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="#fff" stroke-width="2.5" fill="none"/></svg></div>
+            Вам уже начислена или грозит неустойка
+          </div>
+          <div class="checklist-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="#fff" stroke-width="2.5" fill="none"/></svg></div>
+            Вы хотите избежать финансовых рисков
+          </div>
+        </div>
+        <a href="assets/checklist.pdf" target="_blank" rel="noopener" class="btn btn-primary" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v14m-6-6l6 6 6-6"/><path d="M4 20h16"/></svg>
+          Скачать чек-лист (PDF)
+        </a>
+      </div>
+      <div class="checklist-visual">
+        <div class="checklist-visual-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-1 7V3.5L18.5 9H13zm-3 6.59l1.41-1.41L13 15.17V11h-2v4.17l-1.41-1.41L8.59 15.59 12 19l3.41-3.41z"/></svg>
+        </div>
+        <h3>Чек-лист в PDF</h3>
+        <p>10 пунктов для самостоятельной проверки вашей ситуации</p>
+        <a href="assets/checklist.pdf" target="_blank" rel="noopener" class="btn btn-primary" download style="width:100%;justify-content:center;">
+          Скачать PDF
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION (replaces form) -->
+<section id="cta-section">
+  <div class="container">
+    <div class="cta-wrap">
+      <h2>Получите бесплатную консультацию</h2>
+      <p>Напишите в Telegram — мы подскажем, какие документы нужны и есть ли возможность продлить сроки в вашей ситуации. Первичный анализ — 30 минут.</p>
+      <a href="https://t.me/credresurs" target="_blank" rel="noopener" class="cta-tg-btn">
+        <svg><use href="#tg-icon"/></svg>
+        Написать в Telegram
+      </a>
+      <div class="cta-username">@credresurs</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="container">
+    <div class="section-label">Контакты</div>
+    <h2 style="text-align:center;">Свяжитесь с нами</h2>
+    <p class="section-desc" style="margin: 0 auto 32px;text-align:center;">Самый удобный способ связи — Telegram. Ответим в течение 30 минут в рабочее время.</p>
+    <div class="contacts-single">
+      <a href="https://t.me/credresurs" target="_blank" rel="noopener" class="contact-tg-card">
+        <div class="contact-tg-icon">
+          <svg><use href="#tg-icon"/></svg>
+        </div>
+        <div class="contact-tg-label">Telegram</div>
+        <div class="contact-tg-val">@credresurs</div>
+        <div class="contact-tg-cta">Написать в Telegram →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <p>Информация на сайте не является публичной офертой. Решение о продлении сроков принимает банк после рассмотрения документов. Результат оказания услуг зависит от конкретных обстоятельств и условий кредитного договора.</p>
+</div>
+
+<footer>
+  <p>© 2026 ИЖС Правовая помощь. Все права защищены.</p>
+</footer>
+
+<script>
+  // Mobile menu
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMobileMenu() { mobileMenu.classList.remove('open'); }
+
+  // Calculator
+  function fmt(n) {
+    if (!n && n !== 0) return '— ₽';
+    return new Intl.NumberFormat('ru-RU').format(Math.round(n)) + ' ₽';
+  }
+  function calcUpdate() {
+    const payment = parseFloat(document.getElementById('monthlyPayment').value);
+    if (!payment || isNaN(payment)) {
+      document.getElementById('res-increase').textContent = '— ₽';
+      document.getElementById('res-new').textContent = '— ₽';
+      document.getElementById('res-3mo').textContent = '— ₽';
+      return;
+    }
+    const increase = payment * 0.5;
+    const newPay = payment + increase;
+    const threeMonths = increase * 3;
+    document.getElementById('res-increase').textContent = fmt(increase);
+    document.getElementById('res-new').textContent = fmt(newPay);
+    document.getElementById('res-3mo').textContent = fmt(threeMonths);
+  }
+
+  // Scroll animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.problem-card, .trust-card, .doc-card, .step, .result-doc').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity .45s ease, transform .45s ease';
+    observer.observe(el);
+  });
+</script>
+</body>
+</html>
